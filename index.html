@@ -2,27 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <title>Handlebars Exercise</title>
 </head>
 <body>
-  <h1>Here's a random user</h1>
+  <h1 class="text-center">Here's a random user</h1>
 
 <!-- output div -->
-<div class="outputDiv">
+<div class="outputDiv container">
 
 </div>
 
 <!-- handlebars script -->
 <script id="entryData" type="text/x-handlebars-template">
-  <img src="{{results.0.picture.medium}}" alt="">
-  <h2>Name: {{results.0.name.first}}</h2>
-  <h3>Address:</h3>
-  <h3>{{results.0.location.street}}</h3>
-  <h3>{{results.0.location.city}}</h3>
-  <h3>{{results.0.location.state}}</h3>
-  <h3>{{results.0.location.postcode}}</h3>
-  <h4>Email: {{results.0.email}}</h4>
-
+  <div class="row">
+    <div class="col-xs-5 col-xs-offset-1">
+      <img src="{{results.0.picture.medium}}" alt="">
+      <h2>Name: {{results.0.name.first}} {{results.0.name.last}}</h2>
+      <h4>Email: {{results.0.email}}</h4>
+    </div>
+    <div class="col-xs-6">
+      <h3>Address:</h3>
+      <h3>{{results.0.location.street}}</h3>
+      <h3>{{results.0.location.city}}, {{results.0.location.state}}</h3>
+    </div>
+  </div>
 </script>
 
 <!-- regular javascript scripts -->
