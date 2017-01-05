@@ -31,15 +31,17 @@
 <!-- handlebars script -->
 <script id="entryData" type="text/x-handlebars-template">
   <div class="row">
-    <div class="col-xs-5 col-xs-offset-1">
+    <div class="col-xs-12 col-xs-offset-4">
       <h2>Name: {{results.0.name.first}} {{results.0.name.last}}</h2>
       <h2>UserName: {{results.0.login.username}}</h2>
       <h4>Email: {{results.0.email}}</h4>
     </div>
-    <div class="col-xs-6">
-      <h3>Address:</h3>
-      <h3>{{results.0.location.street}}</h3>
-      <h3>{{results.0.location.city}}, {{results.0.location.state}}</h3>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-xs-offset-4">
+      <p>Address:</p>
+      <p>{{results.0.location.street}}</p>
+      <p>{{results.0.location.city}}, {{results.0.location.state}}</p>
     </div>
   </div>
   <div class="row">
