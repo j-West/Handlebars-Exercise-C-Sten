@@ -14,12 +14,20 @@
 
 <!-- handlebars script -->
 <script id="entryData" type="text/x-handlebars-template">
+  <img src="{{results.0.picture.medium}}" alt="">
+  <h2>Name: {{results.0.name.first}}</h2>
+  <h3>Address:</h3>
+  <h3>{{results.0.location.street}}</h3>
+  <h3>{{results.0.location.city}}</h3>
+  <h3>{{results.0.location.state}}</h3>
+  <h3>{{results.0.location.postcode}}</h3>
+  <h4>Email: {{results.0.email}}</h4>
 
 </script>
 
 <!-- regular javascript scripts -->
 <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
 <script src="bower_components/handlebars/handlebars.min.js" charset="utf-8"></script>
-<script src="myJavascripts.js" charset="utf-8"></script>
+<script src="myJavascript.js" charset="utf-8"></script>
 </body>
 </html>
