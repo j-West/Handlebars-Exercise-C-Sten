@@ -12,12 +12,19 @@
 <div class="outputDiv container">
 
 </div>
-
+<div class="row">
+  <div class="col-xs-2 col-xs-offset-4">
+    <button type="button" class="btn-warning">Swipe Left</button>
+  </div>
+  <div class="col-xs-2">
+    <button type="button" class="btn-info">Swipe Right</button>
+  </div>
+</div>
 <!-- handlebars script -->
 <script id="entryData" type="text/x-handlebars-template">
   <div class="row">
     <div class="col-xs-5 col-xs-offset-1">
-      <img src="{{results.0.picture.medium}}" alt="">
+      <img class="img-circle" src="{{results.0.picture.large}}" alt="">
       <h2>Name: {{results.0.name.first}} {{results.0.name.last}}</h2>
       <h4>Email: {{results.0.email}}</h4>
     </div>
