@@ -1,0 +1,21 @@
+{
+  "name": "handlebars",
+  "homepage": "https://github.com/j-West/Handlebars-Exercise-C-Sten",
+  "authors": [
+    "j-west <westja89@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "handlebars": "^4.0.5"
+  }
+}
