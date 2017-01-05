@@ -6,6 +6,7 @@ var promise1 = new Promise(function(resolve, reject) {
     url: 'https://randomuser.me/api/',
     dataType: 'json',
     success: function(data) {
+      console.log(data);
       resolve(data)
     }
   })

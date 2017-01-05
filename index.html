@@ -6,7 +6,7 @@
   <title>Handlebars Exercise</title>
 </head>
 <body>
-  <h1 class="text-center">Here's a random user</h1>
+  <h1 class="text-center">Tinderesk</h1>
 
 <!-- output div -->
 <div class="outputDiv container">
@@ -14,18 +14,26 @@
 </div>
 <div class="row">
   <div class="col-xs-2 col-xs-offset-4">
-    <button type="button" class="btn-warning">Swipe Left</button>
+    <button type="button" class="btn-warning btn-lg">Swipe Left</button>
   </div>
   <div class="col-xs-2">
-    <button type="button" class="btn-info">Swipe Right</button>
+    <button type="button" class="btn-info btn-lg">Swipe Right</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2 col-xs-offset-4">
+    <h6>No thank you!</h6>
+  </div>
+  <div class="col-xs-2">
+    <h6>Heyyy Good lookin'</h6>
   </div>
 </div>
 <!-- handlebars script -->
 <script id="entryData" type="text/x-handlebars-template">
   <div class="row">
     <div class="col-xs-5 col-xs-offset-1">
-      <img class="img-circle" src="{{results.0.picture.large}}" alt="">
       <h2>Name: {{results.0.name.first}} {{results.0.name.last}}</h2>
+      <h2>UserName: {{results.0.login.username}}</h2>
       <h4>Email: {{results.0.email}}</h4>
     </div>
     <div class="col-xs-6">
@@ -34,6 +42,12 @@
       <h3>{{results.0.location.city}}, {{results.0.location.state}}</h3>
     </div>
   </div>
+  <div class="row">
+    <div class="col-xs-offset-5">
+        <img class="img-circle" src="{{results.0.picture.large}}" alt="">
+    </div>
+  </div>
+
 </script>
 
 <!-- regular javascript scripts -->
